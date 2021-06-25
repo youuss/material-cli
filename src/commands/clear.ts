@@ -7,9 +7,9 @@ module.exports = () => {
         .action(() => {
             log.info('clearing...')
             shell.rm('-rf', 'package.json');
-            shell.rm('-rf', 'package-lock.json');
+            shell.rm('-rf', 'yarn.lock');
             shell.rm('-rf', 'node_modules/');
-            shell.rm('-rf', 'command.js');
+            shell.rm('-rf', 'command.ts');
             log.info('done!')
         })
 }

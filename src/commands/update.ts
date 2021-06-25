@@ -9,9 +9,9 @@ module.exports = () => {
 			shell.cd(__dirname)
 			shell.exec('rm -rf .git')
 			const updateFiles = () => {
-				shell.cd(path.join(__dirname, '/material/generate_components'))
+				shell.cd(path.join(__dirname, '../../material/generate_components'))
 				shell.rm('-rf', '*')
-				shell.cd(path.join(__dirname, '/material/generate_modules'))
+				shell.cd(path.join(__dirname, '../../material/generate_modules'))
 				shell.rm('-rf', '*')
 				shell.cd(__dirname)
 				shell.exec('git pull origin master')

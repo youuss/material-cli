@@ -1,4 +1,4 @@
-const { commander, inquirer, clone, log, shell, fs, path } = require('../plugins/modules');
+const { fs, path } = require('../plugins/modules');
 
 const generateModule = (modelType: any, pageName: string, fileName: string, pwd: any) => {
     let aimFileName = fileName

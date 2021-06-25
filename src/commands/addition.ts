@@ -21,7 +21,7 @@ module.exports = () => {
 					if (!_componentType) {
 						log.warn(`:${componentType}  --> 组件不存在, 请检查拼写`)
 					} else {
-						let _filePath = path.join(__dirname, `./material/generate_components/${_componentType}`)
+						let _filePath = path.join(__dirname, `../../material/generate_components/${_componentType}`)
 						let _isFile = fs.statSync(_filePath).isFile()
 						if (_isFile) {
 							generateComponent(_componentType, '', pwd)
