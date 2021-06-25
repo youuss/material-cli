@@ -1,0 +1,29 @@
+{
+  "name": "material-cli",
+  "version": "1.0.0",
+  "description": "物料cli",
+  "main": "command.ts",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only command.ts",
+    "build": "rm -rf lib && tsc --build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^15.12.4",
+    "commander": "^2.19.0",
+    "fs": "0.0.1-security",
+    "git-clone": "^0.1.0",
+    "inquirer": "^6.2.2",
+    "path": "^0.12.7",
+    "shelljs": "^0.8.3",
+    "tracer": "^0.9.8",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.3.4",
+    "user": "0.0.0"
+  },
+  "bin": {
+    "mt-cli": "command.ts"
+  }
+}
